@@ -29,7 +29,7 @@ Through this project, you will learn to:
 ## 📁 Repository Structure
 
 ```
-nn-lab/
+train-mushrooms/
 ├── data/                          # Dataset and preprocessed arrays
 │   ├── mushrooms.csv             # Original mushroom dataset
 │   ├── X_train.npy               # Training features
@@ -66,7 +66,7 @@ nn-lab/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ibrah5em/train-mushrooms
-   cd nn-lab
+   cd train-mushrooms
    ```
 
 2. **Create a virtual environment** (recommended)
@@ -207,42 +207,6 @@ With the default configuration, you should achieve:
 - **ROC AUC**: ~0.99
 
 *Note: Results may vary slightly due to random initialization*
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**1. Module not found error**
-```bash
-# Make sure you activated your virtual environment
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows
-
-# Then reinstall requirements
-pip install -r requirements.txt
-```
-
-**2. TensorFlow installation issues**
-```bash
-# Try installing specific version
-pip install tensorflow==2.10.0
-
-# For M1/M2 Macs, use tensorflow-macos
-pip install tensorflow-macos tensorflow-metal
-```
-
-**3. Data files not found**
-```bash
-# Make sure to run preprocessing first
-python scripts/02_data_preprocessing.py
-```
-
-**4. Out of memory errors**
-```python
-# Reduce batch size in training scripts
-# Change: batch_size=32
-# To: batch_size=16 or batch_size=8
-```
 
 ## 🎓 Assignment Tips
 
